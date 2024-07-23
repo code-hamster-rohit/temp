@@ -1,0 +1,118 @@
+.header-wrapper{
+    position: fixed;
+    top: 8px; right: 8px;left: 8px;
+    width: calc(100% - 16px);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-container{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    margin: 0px 8px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 81.6px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    margin: 16px 0px;
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    gap: 20px;
+}
+.navbar .logo, .menu-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.navbar .logo i{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.menu-icon i{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.menubar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-width: 280px;
+    width: calc(100% - 60px);
+    padding: 20px 30px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+.menus{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    cursor: pointer;
+}
+.menus button{
+    background: transparent;
+    border: 1px solid #f1c40f;
+    color: #f1c40f;
+    padding: 15px 25px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.menus button:hover{
+    background: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 680px){
+    .header-wrapper{
+        top: 8px; right: 8px;
+        width: calc(100% - 16px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container{
+        width: 100%;
+    }
+    .navbar{
+        padding: 10px 20px;
+        margin: 8px 0px;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+    }
+    .menubar{
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+    }
+
+}
+
+.hidden{
+    display: none;
+}

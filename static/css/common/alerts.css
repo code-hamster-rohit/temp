@@ -1,0 +1,40 @@
+@keyframes appear {
+    0%, 45%, 55%, 95%{
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+.alert {
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    font-weight: 200;
+    animation: appear 10s ease-in-out infinite;
+}
+
+.mobile-alert-wrapper{
+    width: calc(100% - 32px);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 16px;
+    margin: 8px 0;
+}
+.mobile-alert-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 680px){
+    .alert{
+        font-size: 13px;
+    }
+}
+
+.hidden{
+    display: none;
+}
