@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.signin-wrapper{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.075);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.signin-container{
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.075);
+    gap: 30px;
+}
+.form-logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.form-signin-methods{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.form-google-method{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    width: calc(100% - 30px);
+    border: 0.25px solid rgba(0, 0, 0, 0.05);
+}
+.form-opc-method{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-opc-method form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+}
+.form-opc-method form input{
+    width: calc(100% - 60px);
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-weight: 500;
+}
+.form-opc-method form input:focus{
+    border: 1px solid rgba(0, 0, 0, 0.9);
+}
+.form-opc-method form input:hover{
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.form-opc-method form input::placeholder{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+}
+.form-opc-method form button{
+    margin-top: 10px;
+    width: max-content;
+    padding: 15px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+.form-opc-method form button:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+}
+.other-sigin-methods{
+    width: calc(100% - 30px);
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.other-sigin-methods a{
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 15px;
+}
+.other-sigin-methods a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+    .signin-container{
+        height: inherit;
+        padding: 50px 0px;
+        border-radius: 0px;
+        justify-content: center;
+    }
+    .form-opc-method form{
+        padding: 5px;
+    }
+    .form-opc-method form input{
+        padding: 15px;
+    }
+    .form-opc-method form button{
+        padding: 15px 25px;
+    }
+    .other-sigin-methods{
+        padding: 0px 15px;
+    }
+    .other-sigin-methods a{
+        font-size: 15px;
+    }
+}
